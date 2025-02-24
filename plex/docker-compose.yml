@@ -7,7 +7,7 @@ services:
       - PUID=1000
       - PGID=1002
       - TZ=America/Detroit
-      - VERSION=docker
+      - VERSION=latest
       - PLEX_CLAIM=claim-3EL6DK9y6k5_JV9hwYWJ
     volumes:
       - /mnt/raid6/media_server/:/config
