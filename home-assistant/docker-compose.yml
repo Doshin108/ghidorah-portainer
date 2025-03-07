@@ -11,7 +11,7 @@ services:
     volumes:
       - /mnt/raid6/home-assistant:/config
     ports:
-      - 8123:8123 #optional
+      - 8123:8123
     # devices:
     #  - /path/to/device:/path/to/device #optional
     restart: unless-stopped
