@@ -5,7 +5,7 @@ services:
     network_mode: host
     environment:
       - PUID=1000
-      - PGID=1000
+      - PGID=1002
       - TZ=America/Detroit
       - VERSION=latest
       - PLEX_CLAIM=claim-3EL6DK9y6k5_JV9hwYWJ
