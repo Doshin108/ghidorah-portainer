@@ -5,7 +5,7 @@ services:
     container_name: radarr
     environment:
       - PUID=1000
-      - PGID=1000
+      - PGID=1002
       - TZ=Etc/UTC
     volumes:
       - /mnt/raid6/radarr:/config
