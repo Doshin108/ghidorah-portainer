@@ -14,5 +14,4 @@ services:
       - /mnt/raid6/media_share/Downloads:/downloads #optional
     ports:
       - 7878:7878
-    restart: unless-stopped    
-    command: /init
+    restart: unless-stopped
