@@ -9,8 +9,7 @@ services:
       - TZ=Etc/UTC
     volumes:
       - /mnt/raid6/radarr:/config
-      - /mnt/raid6/media_share/Series:/tv
-      - /mnt/raid6/media_share/Movies:/movies #optional
+      - /mnt/raid6/media_share/Series:/movies #optional
       - /mnt/raid6/media_share/Downloads:/downloads #optional
     ports:
       - 7878:7878
