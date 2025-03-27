@@ -9,6 +9,7 @@ services:
       - TZ=Etc/UTC
     volumes:
       - /mnt/raid6/sonarr:/config
+      - /mnt/raid6/media_share/Movies:/movies
       - /mnt/raid6/media_share/Series:/tv #optional
       - /mnt/raid6/media_share/Downloads:/downloads #optional
     ports:
