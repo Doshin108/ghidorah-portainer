@@ -1,6 +1,7 @@
 ---
 services:
   radarr:
+    user: "1000:1002"
     image: lscr.io/linuxserver/radarr:latest
     container_name: radarr
     environment:
@@ -13,4 +14,5 @@ services:
       - /mnt/raid6/media_share/Downloads:/downloads #optional
     ports:
       - 7878:7878
-    restart: unless-stopped
+    restart: unless-stopped    
+    command: /init
