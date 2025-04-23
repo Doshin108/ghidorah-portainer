@@ -1,0 +1,13 @@
+services:
+  metube:
+    image: alexta69/metube:latest
+    container_name: metube
+    ports:
+      - '8081:8081'
+    volumes:
+      - /mnt/raid6/media_share/Downloads:/downloads
+    environment:
+      - UID=1000
+      - GID=1000
+      - TZ=America/Detroit
+    restart: unless-stopped
