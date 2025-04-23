@@ -7,7 +7,7 @@ services:
     volumes:
       - /mnt/raid6/media_share/Downloads:/downloads
     environment:
-      - UID=1000
-      - GID=1000
+      - UID=1002
+      - GID=1002
       - TZ=America/Detroit
     restart: unless-stopped
