@@ -3,7 +3,6 @@ services:
   metube:
     image: alexta69/metube:latest
     container_name: metube
-    user: "1002:1002" 
     ports:
       - '8081:8081'
     volumes:
