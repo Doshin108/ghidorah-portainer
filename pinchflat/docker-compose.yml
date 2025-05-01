@@ -1,16 +1,17 @@
-version: "3.7"
+version: "3.8"
 services:
-  ghidorah:
-    image: ghidorah/ghidorah:latest
+  pinchflat:
+    image: erikkaashoek/pinchflat:latest
     container_name: pinchflat
-    hostname: ghidorah
+    hostname: pinchflat
     ports:
-      - "8080:80"
+      - "8081:80"
     volumes:
-      - /opt/ghidorah/data:/data
-      - /opt/ghidorah/config:/config
+      - /mnt/raid6/pinchflat:/config
+      - /mnt/raid6/media_share/Series:/downloads
     environment:
+      - PUID=1000
+      - PGID=1000
       - TZ=America/New_York
       - UMASK_SET=022
-    user: 1000:1000
     restart: unless-stopped
