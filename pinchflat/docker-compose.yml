@@ -5,7 +5,7 @@ services:
     container_name: pinchflat
     hostname: pinchflat
     ports:
-      - "8081:80"
+      - "8945:8945'
     volumes:
       - /opt/pinchflat/data:/data
       - /opt/pinchflat/config:/config
