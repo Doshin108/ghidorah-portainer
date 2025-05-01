@@ -7,8 +7,8 @@ services:
     ports:
       - "8945:8945"
     volumes:
-      - /opt/pinchflat/data:/data
-      - /opt/pinchflat/config:/config
+      - /mnt/raid6/pinchflat:/config
+      - /mnt/raid6/media_share/Series:/downloads
     environment:
       - TZ=America/New_York
       - UMASK_SET=022
