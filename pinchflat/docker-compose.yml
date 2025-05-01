@@ -12,5 +12,4 @@ services:
     environment:
       - TZ=America/New_York
       - UMASK_SET=022
-    user: 1000:1000
     restart: unless-stopped
