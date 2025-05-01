@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   pinchflat:
-    image: erikkaashoek/pinchflat:latest
+    image: ghcr.io/kieraneglin/pinchflat:latest
     container_name: pinchflat
     hostname: pinchflat
     ports:
