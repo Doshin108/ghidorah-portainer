@@ -2,7 +2,7 @@ version: "3.7"
 services:
   ghidorah:
     image: ghidorah/ghidorah:latest
-    container_name: ghidorah
+    container_name: pinchflat
     hostname: ghidorah
     ports:
       - "8080:80"
