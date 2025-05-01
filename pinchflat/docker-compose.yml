@@ -7,11 +7,10 @@ services:
     ports:
       - "8081:80"
     volumes:
-      - /mnt/raid6/pinchflat:/config
-      - /mnt/raid6/media_share/Series:/downloads
+      - /opt/pinchflat/data:/data
+      - /opt/pinchflat/config:/config
     environment:
-      - PUID=1000
-      - PGID=1000
       - TZ=America/New_York
       - UMASK_SET=022
+    user: 1000:1000
     restart: unless-stopped
