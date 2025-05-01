@@ -1,13 +1,16 @@
-version: '3'
+version: "3.7"
 services:
-  pinchflat:
-    image: ghcr.io/kieraneglin/pinchflat:latest
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=America/New_York
+  ghidorah:
+    image: ghidorah/ghidorah:latest
+    container_name: ghidorah
+    hostname: ghidorah
     ports:
-      - '8945:8945'
+      - "8080:80"
     volumes:
-      - /mnt/raid6/pinchflat:/config
-      - /mnt/raid6/media_share/Series:/downloads
+      - /opt/ghidorah/data:/data
+      - /opt/ghidorah/config:/config
+    environment:
+      - TZ=America/New_York
+      - UMASK_SET=022
+    user: 1000:1000
+    restart: unless-stopped
