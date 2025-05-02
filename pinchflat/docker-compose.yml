@@ -11,4 +11,5 @@ services:
       - /mnt/raid6/media_share/Series:/downloads
     environment:
       - TZ=America/New_York
+      - UMASKT=000
     restart: unless-stopped
