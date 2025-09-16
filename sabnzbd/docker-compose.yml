@@ -7,7 +7,7 @@ services:
       - PGID=1000
       - TZ=Etc/UTC
     volumes:
-      - /mnt/raid6/sabnzbd/config:/config/sabnzbd
+      - /mnt/raid6/sabnzbd:/config/sabnzbd
       - /mnt/raid6/media_share/Downloads/incomplete:/incomplete-downloads #optional
       - /mnt/raid6/media_share/Downloads:/downloads #optional
     ports:
