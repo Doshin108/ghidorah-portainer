@@ -12,6 +12,7 @@ services:
       - KOMETA_RUN=True #optional
       - KOMETA_TEST=True #optional
       - KOMETA_NO_MISSING=False #optional
+      - VERIFY_SSL=False
     volumes:
       - /mnt/raid6/kometa:/config
     restart: unless-stopped
