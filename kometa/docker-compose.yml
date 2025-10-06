@@ -10,7 +10,7 @@ services:
       - KOMETA_CONFIG=/config/config.yml #optional
       - KOMETA_TIME=03:00 #optional
       - KOMETA_RUN=False #optional
-      - KOMETA_TEST=False #optional
+      - KOMETA_TEST=True #optional
       - KOMETA_NO_MISSING=False #optional
     volumes:
       - /mnt/raid6/kometa:/config
