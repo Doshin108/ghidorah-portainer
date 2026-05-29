@@ -11,6 +11,6 @@ services:
       - VERSION=docker
       - PLEX_CLAIM=claim-3EL6DK9y6k5_JV9hwYWJ
       - ADVERTISE_IP=http://10.0.0.10:32400/  
-    ports:
-      - 10.0.0.10:32400:32400 
+    volumes:
+      - /mnt/raid6/radarr:/config
     restart: unless-stopped
