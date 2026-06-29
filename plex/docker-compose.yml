@@ -7,7 +7,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=America/Detroit
-      - VERSION=docker
+      - VERSION=latest
       - PLEX_CLAIM=claim-3EL6DK9y6k5_JV9hwYWJ
       - ADVERTISE_IP=http://10.0.0.10:32400/
       - PLEX_LOCAL_CONTAINER_IDENTIFIER=http://10.0.0.10:32400/
